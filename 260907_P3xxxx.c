@@ -3,15 +3,19 @@
 int main(void) 
 {
  int N;//센서 개수
- double valua[1000];//센서로부터 입력되는값  
- double threshold;//비교값(0~1023)
- int label[N];
+ int valua[1000];//센서로부터 입력되는값  
+ int threshold;//비교값(0~1023)
  int i;
+
  printf("센서갯수 : "); scanf("%d",&N);
  printf("센서에 입력된 값 : "); 
  for(i=0;i<N;i++){
  scanf("%d",&valua[i]);
- }
+  }
+ printf("Threshold : ");scanf("%d",&threshold);
+ printf("\n");
+
+ int label[N];
 
  for(i=0;i<N;i++)
  {
